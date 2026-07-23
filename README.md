@@ -133,10 +133,6 @@ I'm continuously expanding my expertise in:
 
 https://www.linkedin.com/in/kjsanc
 
-💻 **GitHub**
-
-https://github.com/sdk235
-
 ---
 
 > *"Great software is built by combining clean architecture, scalable engineering, and continuous learning."*
