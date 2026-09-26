@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Kevin Sanchez
 
-## Senior Software Engineer | Cloud · Microservices · AI-Assisted Engineering
+## Senior Software Engineer | Cloud · AI-Assisted Engineering
 
 I build and modernize **enterprise software where Cloud, AI, payments, e-commerce, and business systems meet**.
 
