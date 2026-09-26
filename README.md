@@ -48,21 +48,30 @@ Reference architectures, simulation platforms, digital twins, MBSE, scientific c
 
 ## 🧠 Selected Open-Source Work
 
-### [JFXAI4ARCH — Open-Source Enterprise AI Architecture](https://github.com/robotics-intelligent-systems/jfxai4arch)
+### [Open-Source Enterprise AI Architecture](https://github.com/robotics-intelligent-systems/jfxai4arch)
 
 A modular architecture for enterprise **AI agents, RAG, MCP, hybrid local/cloud inference, cloud-native deployment, and replaceable AI components**.
 
-### [JFXAI4OBS — Financial Engineering & Open Banking](https://github.com/robotics-intelligent-systems/jfxai4obs)
+### [Financial Engineering & Open Banking](https://github.com/robotics-intelligent-systems/jfxai4obs)
 
 Open architecture concepts for **financial systems, lending, payments, banking interoperability, decentralized/open banking, and AI-assisted financial engineering**.
 
-### [JFXAI4OHS — B2B E-Commerce](https://github.com/robotics-intelligent-systems/jfxai4ohs)
+### [B2B E-Commerce](https://github.com/robotics-intelligent-systems/jfxai4ohs)
 
 Open-source architecture work focused on **B2B commerce, enterprise integration, digital platforms, and AI-assisted business systems**.
 
 ### [Robotics Intelligent Systems](https://github.com/robotics-intelligent-systems)
 
 A broader open-source initiative exploring **AI, cloud platforms, digital twins, engineering simulation, industrial systems, energy, scientific computing, and enterprise software**.
+
+As a **Simulation Engineer**, I offer specialized services at the intersection of scientific modeling and machine learning (SciML). My primary focus is delivering high-performance computing (HPC) solutions characterized by portability, interoperability, and the use of open-source technologies.
+
+- **Scientific Machine Learning (SciML) and Simulation:** Design and execution of dynamic physical and mathematical models integrated with machine learning to solve complex scientific problems. Development of simulation environments using tools such as JModelica, Julia, SciPy, and Scilab.
+- **High-Performance Computing (HPC):** Creation of high-performance algorithms with a strict focus on performance-portable computing. Optimization of calculations and simulations across multiple architectures using Kokkos HPC C++.
+- **Multi-language and Cross-platform Interoperability:** Architectural design of solutions that integrate diverse technology ecosystems to expand software capabilities ("Greater Possibilities"). Expert implementation of bridges between languages ​​and platforms using GraalVM, IKVM DotNet, and RascalMPL.
+- **Advanced Scientific Software Engineering:** Construction of robust, secure, and innovative systems that deliver real-world impact in industry and research. Use of specialized, high-reliability languages ​​such as OCaml and GNAT Ada, grounded in an open-source philosophy.
+
+> All services are designed to maximize performance and foster technological innovation, driving science and simulation toward a more open and accessible ecosystem (**"A more open tomorrow"**).
 
 ---
 
