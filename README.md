@@ -1,84 +1,151 @@
-# 👋 Hi, I'm Kevin Sanchez
+# Kevin Sanchez
 
 ### Senior Software Engineer & Systems Architect
-**Cloud-Native · Enterprise Systems · AI Engineering (MCP/RAG) · SciML & HPC**
 
-📍 *Lima, Peru* | 🌐 *Open to LATAM & U.S. Remote Roles, Technical Partnerships & Joint Ventures*
+**Enterprise modernization · AI integration · Scientific computing · Polyglot runtimes**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-kjsanc-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/kjsanc)
-[![Email](https://img.shields.io/badge/Email-kjsanc%40gmail.com-D14836?style=for-the-badge&logo=gmail)](mailto:kjsanc@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-robotics--intelligent--systems-181717?style=for-the-badge&logo=github)](https://github.com/robotics-intelligent-systems)
+Lima, Peru · Open to remote opportunities across LATAM and the U.S., technical partnerships and collaborative R&D.
 
----
+[LinkedIn](https://www.linkedin.com/in/kjsanc) · [Email](mailto:kjsanc@gmail.com) · [Personal repositories](https://github.com/sdk2035?tab=repositories) · [Robotics & Intelligent Systems](https://github.com/robotics-intelligent-systems)
 
-## 🎯 Executive Overview
+## About
 
-I am a **Systems Analyst and Senior Software Engineer** with **10+ years of experience** designing, modernizing, and scaling mission-critical systems. My career spans **50+ enterprise projects** across FinTech, banking, microfinance, e-commerce, ERP, and electronic invoicing.
+I am a systems analyst and senior software engineer with **10+ years of experience**
+across **50+ enterprise projects** in FinTech, banking, microfinance, e-commerce,
+ERP and electronic invoicing.
 
-My engineering philosophy combines robust, transactional enterprise foundations with cutting-edge **AI-assisted architectures (MCP, RAG, AI Agents)** and **Scientific Machine Learning (SciML/HPC)**. I specialize in turning complex domain requirements into resilient, modular, open-source-aligned platforms.
+My work connects enterprise software engineering with AI-assisted architectures
+and scientific computing. I focus on modular systems, explicit integration
+contracts and practical modernization paths across Java, .NET and cloud platforms.
 
----
+My current personal project portfolio explores **GraalVM, Truffle, IKVM/.NET,
+Modelica and language engineering**, alongside web-based modeling, simulation
+and 3D tools.
 
-## 🚀 Key Value Proposition & Track Record
+## Explore
 
-- 💼 **10+ Years of Industry Experience:** Delivering mission-critical architectures serving thousands of concurrent users.
-- 🏗️ **50+ Enterprise Projects:** Proven track record in FinTech, core banking integration, microfinance, and B2B/B2C e-commerce.
-- ⚡ **High Impact:** Achieved **30%+ performance optimizations** in legacy enterprise modernizations and high-throughput transactional engines.
-- ☁️ **Cloud-Native & Distributed Systems:** Expert in Azure, AWS, Kubernetes, Microservices, and Event-Driven Integration.
-- 🤖 **Advanced AI Integration:** Operationalizing LLMs via Model Context Protocol (MCP), RAG, vector databases, and private/hybrid local inference.
-- 🔬 **SciML & Simulation Engineering:** High-performance computing (HPC) with performance-portable frameworks (Kokkos C++, Julia, GraalVM, OCaml, GNAT Ada).
+- [Engineering Focus](#engineering-focus)
+- [Personal Project Portfolio](#personal-project-portfolio)
+  - [Modeling, Simulation and Digital Twins](#modeling-simulation-and-digital-twins)
+  - [Scientific Computing Languages](#scientific-computing-languages)
+  - [JVM and .NET Interoperability](#jvm-and-net-interoperability)
+  - [Metaprogramming and Language Workbenches](#metaprogramming-and-language-workbenches)
+  - [Polyglot Language Projects](#polyglot-language-projects)
+  - [3D Modeling, CAD and Educational Visualization](#3d-modeling-cad-and-educational-visualization)
+- [Selected Organization Projects](#selected-organization-projects)
+- [Technology Stack](#technology-stack)
+- [Collaboration](#collaboration)
 
----
+## Engineering Focus
 
-## 🛠️ Core Technology Stack
+| Area | Focus |
+| --- | --- |
+| Enterprise modernization | Modular architectures, legacy integration, transactional systems and cloud migration |
+| AI and knowledge systems | RAG, Model Context Protocol (MCP), agent integration and private/hybrid inference |
+| Scientific computing | Physical modeling, digital twins, Scientific Machine Learning (SciML) and HPC |
+| Language engineering | GraalVM/Truffle, metaprogramming and JVM/.NET interoperability |
+| Engineering tools | Low-code simulation workflows, browser-based CAD and 3D visualization |
 
-| Domain | Technologies & Frameworks |
-| :--- | :--- |
-| **Backend & Architecture** | Java, C#/.NET, Scala, Python, TypeScript, Node.js, PHP, Spring Boot, ASP.NET Core, NestJS |
-| **Cloud & DevOps** | Microsoft Azure, AWS, Docker, Kubernetes, Linux, CI/CD Pipelines, RabbitMQ, Nginx |
-| **Enterprise Integration** | REST, SOAP, OData, OpenAPI, ETL, Microservices, Event-Driven Architectures |
-| **FinTech & Business** | Payments, Credit Workflows, Microfinance, Electronic Invoicing, ERP Interoperability |
-| **AI & Knowledge Systems** | Azure OpenAI, LangChain, RAG, Model Context Protocol (MCP), AI Agents, Vector DBs, Ollama/Local LLMs |
-| **SciML & HPC** | Julia, Kokkos C++, GraalVM, IKVM DotNet, JModelica, SciPy, OCaml, GNAT Ada |
-| **Data Stores** | PostgreSQL, SQL Server, Oracle, MySQL, DynamoDB |
+## Personal Project Portfolio
 
----
+The following **22 personal repositories** are grouped by their primary focus.
+Descriptions summarize project scope; implementation status, supported features,
+licensing and performance evidence belong to each repository's documentation.
 
-## 🧠 Selected Open-Source Architecture & Research
+### Modeling, Simulation and Digital Twins
 
-### 🤖 [Open-Source Enterprise AI Architecture](https://github.com/robotics-intelligent-systems/jfxai4arch)
-A modular blueprint for enterprise-grade **AI agents, RAG, Model Context Protocol (MCP), and hybrid local/cloud inference engines** with zero vendor lock-in.
+| Project | Focus |
+| --- | --- |
+| [GraalModelica](https://github.com/sdk2035/GraalModelica) | Modelica-based physical modeling with a GraalVM-oriented runtime approach |
+| [JModelica-Flow](https://github.com/sdk2035/JModelica-Flow) | Low-code simulation and control canvas for GraalModelica |
+| [jfxmodelica](https://github.com/sdk2035/jfxmodelica) | JFXModelica Cloud AI: a web platform project for modeling, multiphysics simulation and digital twins around GraalModelica |
 
-### 💳 [Financial Engineering & Open Banking](https://github.com/robotics-intelligent-systems/jfxai4obs)
-Reference architectures for **decentralized lending, payment gateways, banking interoperability, and AI-assisted financial risk modeling**.
+These projects address complementary layers: modeling language, visual workflows
+and the surrounding simulation platform.
 
-### 🛒 [B2B E-Commerce & Middleware Platform](https://github.com/robotics-intelligent-systems/jfxai4ohs)
-An open-source integration framework connecting **catalog, order, payment, and ERP workflows** with embedded AI capabilities.
+### Scientific Computing Languages
 
-### 🔬 [Robotics, Simulation & SciML Ecosystem](https://github.com/robotics-intelligent-systems)
-A research initiative at the intersection of **scientific computing, digital twins, and industrial AI**:
-- **SciML & Simulation:** Integration of dynamic physical-mathematical models with machine learning using Julia, SciPy, and JModelica.
-- **Performance-Portable HPC:** High-performance algorithms optimized across heterogeneous hardware using Kokkos C++.
-- **Cross-Platform Interoperability:** Polyglot bridges connecting disparate software ecosystems via GraalVM, IKVM DotNet, and RascalMPL.
+| Project | Focus |
+| --- | --- |
+| [GraalJulia](https://github.com/sdk2035/GraalJulia) | Julia language implementation work targeting GraalVM |
+| [GraalScilab](https://github.com/sdk2035/GraalScilab) | Scilab language implementation work targeting GraalVM |
 
----
+### JVM and .NET Interoperability
 
-## 🤝 Collaboration & Venture Interests
+| Project | Focus |
+| --- | --- |
+| [GraalIKVM](https://github.com/sdk2035/GraalIKVM) | Interoperability initiative connecting IKVM.NET concepts with GraalVM and Truffle |
+| [TruffleMono](https://github.com/sdk2035/TruffleMono) | AST interpreter infrastructure and IKVM/Mono integration research |
+| [rascal-mono](https://github.com/sdk2035/rascal-mono) | Rascal-based language tooling with ECMA CLI, C# and .NET integration scope |
+| [asharplang](https://github.com/sdk2035/asharplang) | A# (A Sharp), an Ada-to-.NET port project |
+| [jsharplang](https://github.com/sdk2035/jsharplang) | JSharp.NET (J#), a Java-oriented language transition project for the .NET ecosystem |
 
-I am actively building strategic relationships across **Argentina, Peru, LATAM, and the U.S. technology ecosystem**.
+### Metaprogramming and Language Workbenches
 
-I am open to discussing:
-- 🏢 **Remote Roles:** Senior Software Architect / Staff Engineer / AI Systems Lead.
-- 🚀 **Venture & Startups:** Technical co-founding, MVP engineering, and product validation.
-- 🔄 **Enterprise Modernization:** Cloud-native refactoring, FinTech integrations, and private AI deployments.
-- 🧪 **Open-Source & Research:** Collaborative R&D in AI agents, MCP standards, and scientific simulation.
+| Project | Focus |
+| --- | --- |
+| [GraalRascal](https://github.com/sdk2035/GraalRascal) | Rascal metaprogramming language work targeting GraalVM |
+| [rascal-latino](https://github.com/sdk2035/rascal-latino) | Rascal metaprogramming with a Latino core implementation |
+| [GraalLatino](https://github.com/sdk2035/GraalLatino) | Latino language implementation work targeting GraalVM |
 
----
+### Polyglot Language Projects
 
-## 📫 Connect with Me
+| Project | Focus |
+| --- | --- |
+| [GraalClang](https://github.com/sdk2035/GraalClang) | Clang-related compiler and GraalVM integration work |
+| [GraalVala](https://github.com/sdk2035/GraalVala) | Vala language implementation work targeting GraalVM |
+| [GraalAugusta](https://github.com/sdk2035/GraalAugusta) | Augusta language implementation work targeting GraalVM |
+| [GraalOCaml](https://github.com/sdk2035/GraalOCaml) | OCaml language implementation work targeting GraalVM |
+| [GraalEiffel](https://github.com/sdk2035/GraalEiffel) | Eiffel language implementation work targeting GraalVM |
+| [GraalCOBOL](https://github.com/sdk2035/GraalCOBOL) | COBOL language implementation work targeting GraalVM |
 
-- **LinkedIn:** [linkedin.com/in/kjsanc](https://www.linkedin.com/in/kjsanc)
-- **Email:** [kjsanc@gmail.com](mailto:kjsanc@gmail.com)
-- **GitHub:** [@robotics-intelligent-systems](https://github.com/robotics-intelligent-systems)
+### 3D Modeling, CAD and Educational Visualization
 
-> *"Build openly. Integrate intelligently. Validate with engineering. Create long-term value."*
+| Project | Focus |
+| --- | --- |
+| [JFXBlender](https://github.com/sdk2035/JFXBlender) | 3D modeling environment |
+| [JWebCAD](https://github.com/sdk2035/JWebCAD) | Browser-based 3D CAD design and editing project using GraalVM |
+| [JDot](https://github.com/sdk2035/JDot) | Educational 3D animation web engine with a unified interface and GraalVM integration |
+
+## Selected Organization Projects
+
+My broader architecture and research work is organized under
+[Robotics & Intelligent Systems](https://github.com/robotics-intelligent-systems).
+
+| Project | Area |
+| --- | --- |
+| [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch) | Enterprise AI architecture, agents, RAG, MCP and local/cloud inference |
+| [jfxai4obs](https://github.com/robotics-intelligent-systems/jfxai4obs) | Financial engineering, payment/credit workflows and banking interoperability |
+| [jfxai4ohs](https://github.com/robotics-intelligent-systems/jfxai4ohs) | B2B e-commerce and integration across catalog, order, payment and ERP workflows |
+
+The organization also brings together research into robotics, digital twins,
+scientific simulation, industrial AI and performance-portable computing.
+
+## Technology Stack
+
+| Domain | Technologies and practices |
+| --- | --- |
+| Backend | Java, C#/.NET, Scala, Python, TypeScript, Node.js, PHP, Spring Boot, ASP.NET Core, NestJS |
+| Cloud and delivery | Azure, AWS, Docker, Kubernetes, Linux, CI/CD, RabbitMQ, Nginx |
+| Enterprise integration | REST, SOAP, OData, OpenAPI, ETL, microservices and event-driven architecture |
+| AI and knowledge | Azure OpenAI, LangChain, RAG, MCP, agents, vector databases, Ollama and local inference |
+| Scientific computing and runtimes | Julia, Kokkos C++, GraalVM, Truffle, IKVM.NET, JModelica/Modelica, SciPy, OCaml, GNAT Ada |
+| Data | PostgreSQL, SQL Server, Oracle, MySQL, DynamoDB |
+| Business domains | Payments, credit workflows, microfinance, electronic invoicing and ERP interoperability |
+
+## Collaboration
+
+I welcome conversations about:
+
+- **Remote engineering roles:** software architecture, senior/staff engineering and AI systems leadership.
+- **Enterprise projects:** modernization, cloud integration, FinTech workflows and private AI deployments.
+- **Research partnerships:** language runtimes, JVM/.NET interoperability, simulation, SciML and digital twins.
+- **Startups and ventures:** technical co-founding, MVP engineering and product validation.
+
+For a project-specific proposal, start with an issue in the relevant repository.
+For professional opportunities and partnerships, connect through
+[LinkedIn](https://www.linkedin.com/in/kjsanc) or
+[email](mailto:kjsanc@gmail.com).
+
+*Build openly. Integrate intelligently. Validate with engineering.*
+
