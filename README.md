@@ -26,6 +26,7 @@ and 3D tools.
 
 - [Engineering Focus](#engineering-focus)
 - [Personal Project Portfolio](#personal-project-portfolio)
+  - [Enterprise Modernization and Business Platforms](#enterprise-modernization-and-business-platforms)
   - [Modeling, Simulation and Digital Twins](#modeling-simulation-and-digital-twins)
   - [Scientific Computing Languages](#scientific-computing-languages)
   - [JVM and .NET Interoperability](#jvm-and-net-interoperability)
@@ -48,9 +49,17 @@ and 3D tools.
 
 ## Personal Project Portfolio
 
-The following **22 personal repositories** are grouped by their primary focus.
+The following **23 personal repositories** are grouped by their primary focus.
 Descriptions summarize project scope; implementation status, supported features,
 licensing and performance evidence belong to each repository's documentation.
+
+### Enterprise Modernization and Business Platforms
+
+| Project | Focus |
+| --- | --- |
+| [OpenBAP](https://github.com/sdk2035/OpenBAP) | AI-assisted enterprise modernization platform combining Apache OFBiz, GraalVM/Truffle and OpenXava for semantic reconstruction, legacy ABAP interoperability and incremental ERP migration |
+
+OpenBAP focuses on semantic-first modernization: extracting legacy ERP metadata and business rules, mapping them to an open enterprise model, validating reconstructed behavior and supporting staged migration without reproducing proprietary application-server internals.
 
 ### Modeling, Simulation and Digital Twins
 
@@ -148,4 +157,3 @@ For professional opportunities and partnerships, connect through
 [email](mailto:kjsanc@gmail.com).
 
 *Build openly. Integrate intelligently. Validate with engineering.*
-
