@@ -49,7 +49,7 @@ and 3D tools.
 
 ## Personal Project Portfolio
 
-The following **23 personal repositories** are grouped by their primary focus.
+The following **24 personal repositories** are grouped by their primary focus.
 Descriptions summarize project scope; implementation status, supported features,
 licensing and performance evidence belong to each repository's documentation.
 
@@ -68,9 +68,10 @@ OpenBAP focuses on semantic-first modernization: extracting legacy ERP metadata 
 | [GraalModelica](https://github.com/sdk2035/GraalModelica) | Modelica-based physical modeling with a GraalVM-oriented runtime approach |
 | [JModelica-Flow](https://github.com/sdk2035/JModelica-Flow) | Low-code simulation and control canvas for GraalModelica |
 | [jfxmodelica](https://github.com/sdk2035/jfxmodelica) | JFXModelica Cloud AI: a web platform project for modeling, multiphysics simulation and digital twins around GraalModelica |
+| [jfxengine](https://github.com/sdk2035/jfxengine) | Research and architecture project connecting MBSE/SysML, 3D visualization, simulation and digital twins with AI-assisted engineering workflows |
 
-These projects address complementary layers: modeling language, visual workflows
-and the surrounding simulation platform.
+These projects address complementary layers: modeling language, visual workflows,
+simulation platforms, systems engineering and 3D visualization.
 
 ### Scientific Computing Languages
 
