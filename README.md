@@ -37,6 +37,7 @@ portfolio at Robotics & Intelligent Systems.
   - [Polyglot Language Projects](#polyglot-language-projects)
   - [3D Modeling, CAD and Educational Visualization](#3d-modeling-cad-and-educational-visualization)
 - [Selected Organization Projects](#selected-organization-projects)
+- [JFX Portfolio Integration Proposal](docs/propuesta-integracion-portafolio-jfx.md)
 - [Technology Stack](#technology-stack)
 - [Collaboration](#collaboration)
 
@@ -214,4 +215,5 @@ For professional opportunities and partnerships, connect through
 [email](mailto:kjsanc@gmail.com).
 
 *Build openly. Integrate intelligently. Validate with engineering.*
+
 
