@@ -18,9 +18,11 @@ My work connects enterprise software engineering with AI-assisted architectures
 and scientific computing. I focus on modular systems, explicit integration
 contracts and practical modernization paths across Java, .NET and cloud platforms.
 
-My current personal project portfolio explores **GraalVM, Truffle, IKVM/.NET,
-Modelica and language engineering**, alongside web-based modeling, simulation
-and 3D tools.
+My current project portfolio explores **GraalVM, Truffle, IKVM/.NET, Modelica
+and language engineering**, alongside low-code authoring, data engineering,
+legacy modernization, simulation and 3D tools. Complementary JFX projects hosted
+under `sdk2035` provide architecture workstreams for integration with the domain
+portfolio at Robotics & Intelligent Systems.
 
 ## Explore
 
@@ -28,6 +30,7 @@ and 3D tools.
 - [Personal Project Portfolio](#personal-project-portfolio)
   - [Enterprise Modernization and Business Platforms](#enterprise-modernization-and-business-platforms)
   - [Modeling, Simulation and Digital Twins](#modeling-simulation-and-digital-twins)
+  - [Complementary JFX Engineering Projects](#complementary-jfx-engineering-projects)
   - [Scientific Computing Languages](#scientific-computing-languages)
   - [JVM and .NET Interoperability](#jvm-and-net-interoperability)
   - [Metaprogramming and Language Workbenches](#metaprogramming-and-language-workbenches)
@@ -49,7 +52,9 @@ and 3D tools.
 
 ## Personal Project Portfolio
 
-The following **24 personal repositories** are grouped by their primary focus.
+The following **28 repositories under sdk2035** are grouped by their primary focus.
+This curated portfolio includes the complementary JFX projects now hosted here;
+it is not an inventory of every repository or upstream fork in the account.
 Descriptions summarize project scope; implementation status, supported features,
 licensing and performance evidence belong to each repository's documentation.
 
@@ -67,11 +72,36 @@ OpenBAP focuses on semantic-first modernization: extracting legacy ERP metadata 
 | --- | --- |
 | [GraalModelica](https://github.com/sdk2035/GraalModelica) | Modelica-based physical modeling with a GraalVM-oriented runtime approach |
 | [JModelica-Flow](https://github.com/sdk2035/JModelica-Flow) | Low-code simulation and control canvas for GraalModelica |
-| [jfxmodelica](https://github.com/sdk2035/jfxmodelica) | JFXModelica Cloud AI: a web platform project for modeling, multiphysics simulation and digital twins around GraalModelica |
-| [jfxengine](https://github.com/sdk2035/jfxengine) | Research and architecture project connecting MBSE/SysML, 3D visualization, simulation and digital twins with AI-assisted engineering workflows |
 
-These projects address complementary layers: modeling language, visual workflows,
-simulation platforms, systems engineering and 3D visualization.
+These projects address the modeling language and visual workflow layers. The JFX
+projects below explore complementary authoring, simulation and visualization roles.
+
+### Complementary JFX Engineering Projects
+
+These six repositories are currently hosted under **sdk2035**. Use these links for
+the complementary projects transferred into or maintained in this account; domain
+applications remain separately cataloged by Robotics & Intelligent Systems.
+
+| Project | Focus and complementary role |
+| --- | --- |
+| [jfxlcdp](https://github.com/sdk2035/jfxlcdp) | Reference architecture for metadata-driven low-code authoring, declarative JavaFX interfaces and AI-assisted systems engineering |
+| [jfxlegacy2modern](https://github.com/sdk2035/jfxlegacy2modern) | AI-assisted legacy modernization architecture: source analysis, architecture recovery, candidate transformations and behavior-preserving validation |
+| [jfxetl4de](https://github.com/sdk2035/jfxetl4de) | Data-engineering integration laboratory for ETL/ELT, streaming, lakehouse workflows, data contracts and engineering-data pipelines |
+| [jfxicp](https://github.com/sdk2035/jfxicp) | Reference architecture for cloud and polyglot interoperability, distributed engineering computing and co-simulation |
+| [jfxengine](https://github.com/sdk2035/jfxengine) | Research and architecture connecting MBSE/SysML, 3D visualization, simulation and digital twins with AI-assisted engineering workflows |
+| [jfxmodelica](https://github.com/sdk2035/jfxmodelica) | JFXModelica Cloud AI: modeling, multiphysics simulation and digital-twin platform work around GraalModelica |
+
+The proposed responsibilities are complementary: JFXLCDP authors specifications
+and interfaces; JFXLEGACY2MODERN analyzes and transforms existing software;
+JFXETL4DE organizes data pipelines; JFXICP defines interoperability patterns;
+JFXENGINE presents engineering models and results; JFXMODELICA explores physical
+modeling and simulation workflows. OpenBAP provides a separate enterprise/ERP
+modernization workstream.
+
+These roles describe an integration direction, not a single installed platform.
+Each repository defines its implementation status. For example, JFXLCDP currently
+contains documentation and design diagrams rather than a runnable low-code system.
+Cross-project adapters need explicit contracts, maintainers and reproducible tests.
 
 ### Scientific Computing Languages
 
@@ -124,14 +154,40 @@ My broader architecture and research work is organized under
 
 | Project | Area |
 | --- | --- |
-| [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch) | Enterprise AI architecture, agents, RAG, MCP and local/cloud inference |
+| [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch) | Technical knowledge and agent architecture, with an initial local RAG pilot |
+| [jfxai4nlp](https://github.com/robotics-intelligent-systems/jfxai4nlp) | Language extraction, code intelligence and AI evaluation architecture |
+| [jfxai4dia](https://github.com/robotics-intelligent-systems/jfxai4dia) | Physics-driven industrial design, CAD and engineering validation |
+| [jfxlms4air](https://github.com/robotics-intelligent-systems/jfxlms4air) | Localization, mapping and perception for autonomous inspection |
+| [jfxfmis](https://github.com/robotics-intelligent-systems/jfxfmis) | Farm management, agricultural digital twins and telemetry |
+| [jfxai4bss](https://github.com/robotics-intelligent-systems/jfxai4bss) | Buildings, infrastructure and smart-community digital-twin architecture |
 | [jfxai4obs](https://github.com/robotics-intelligent-systems/jfxai4obs) | Financial engineering, payment/credit workflows and banking interoperability |
 | [jfxai4ohs](https://github.com/robotics-intelligent-systems/jfxai4ohs) | B2B e-commerce and integration across catalog, order, payment and ERP workflows |
 
-The organization also brings together research into robotics, digital twins,
-scientific simulation, industrial AI and performance-portable computing.
+See the [organization profile](https://github.com/robotics-intelligent-systems)
+for its broader domain catalog. Agriculture belongs to JFXFMIS; JFXAI4BSS focuses
+on the built environment.
+
+The proposed connection uses **shared technical AI services and domain-owned
+adapters**: JFXAI4ARCH supplies the knowledge/inference workstream, JFXAI4NLP the
+language/evaluation workstream, and domain projects retain their models, data and
+acceptance decisions. The sdk2035 projects contribute complementary authoring,
+modernization, data, interoperability and visualization workstreams.
+
+A practical starting point is the [JFXAI4ARCH technical RAG pilot](https://github.com/robotics-intelligent-systems/jfxai4arch/blob/main/docs/rag/PILOT.md):
+local Markdown/TXT retrieval with source references, optional Ollama generation,
+a Langfuse metadata adapter and Bruno API checks. Its single-user baseline is
+implemented; real-model quality, a live Langfuse deployment and wider integration
+still require validation. Other cross-project roles above remain proposed unless
+supported by implementation evidence in their repositories.
 
 ## Technology Stack
+
+Technologies are selected per project and workload; this list is not a shared
+installation requirement. For JFX integration, compatible libraries may run in
+process while scientific workloads or external systems use separate workers and
+APIs. GraalVM compatibility is evaluated per component, not assumed for the whole
+portfolio. Record versions, provenance, licenses and validation results before
+adopting a component.
 
 | Domain | Technologies and practices |
 | --- | --- |
@@ -158,3 +214,4 @@ For professional opportunities and partnerships, connect through
 [email](mailto:kjsanc@gmail.com).
 
 *Build openly. Integrate intelligently. Validate with engineering.*
+
