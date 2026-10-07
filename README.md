@@ -31,6 +31,7 @@ portfolio at Robotics & Intelligent Systems.
   - [Enterprise Modernization and Business Platforms](#enterprise-modernization-and-business-platforms)
   - [Modeling, Simulation and Digital Twins](#modeling-simulation-and-digital-twins)
   - [Complementary JFX Engineering Projects](#complementary-jfx-engineering-projects)
+  - [AI Infrastructure and Distributed Inference](#ai-infrastructure-and-distributed-inference)
   - [Scientific Computing Languages](#scientific-computing-languages)
   - [JVM and .NET Interoperability](#jvm-and-net-interoperability)
   - [Metaprogramming and Language Workbenches](#metaprogramming-and-language-workbenches)
@@ -53,7 +54,7 @@ portfolio at Robotics & Intelligent Systems.
 
 ## Personal Project Portfolio
 
-The following **28 repositories under sdk2035** are grouped by their primary focus.
+The following **29 repositories under sdk2035** are grouped by their primary focus.
 This curated portfolio includes the complementary JFX projects now hosted here;
 it is not an inventory of every repository or upstream fork in the account.
 Descriptions summarize project scope; implementation status, supported features,
@@ -103,6 +104,16 @@ These roles describe an integration direction, not a single installed platform.
 Each repository defines its implementation status. For example, JFXLCDP currently
 contains documentation and design diagrams rather than a runnable low-code system.
 Cross-project adapters need explicit contracts, maintainers and reproducible tests.
+
+### AI Infrastructure and Distributed Inference
+
+| Project | Focus |
+| --- | --- |
+| [llm-d](https://github.com/sdk2035/llm-d) | Fork of [llm-d/llm-d](https://github.com/llm-d/llm-d): distributed LLM inference serving on Kubernetes, including cache-aware routing and prefill/decode disaggregation over model servers such as vLLM |
+
+A candidate for the JFXAI4ARCH inference workstream when measured demand justifies
+distributed serving. Adoption requires compatible accelerators, networking and
+Kubernetes operations; it remains a proposed integration with the JFX portfolio.
 
 ### Scientific Computing Languages
 
