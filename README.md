@@ -29,6 +29,7 @@ portfolio at Robotics & Intelligent Systems.
 - [Engineering Focus](#engineering-focus)
 - [Personal Project Portfolio](#personal-project-portfolio)
   - [Enterprise Modernization and Business Platforms](#enterprise-modernization-and-business-platforms)
+    - [GraalCOBOL: COBOL Modernization](#graalcobol--cobol-modernization-and-mainframe-integration)
   - [Modeling, Simulation and Digital Twins](#modeling-simulation-and-digital-twins)
   - [Complementary JFX Engineering Projects](#complementary-jfx-engineering-projects)
   - [AI Infrastructure and Distributed Inference](#ai-infrastructure-and-distributed-inference)
@@ -65,8 +66,53 @@ licensing and performance evidence belong to each repository's documentation.
 | Project | Focus |
 | --- | --- |
 | [OpenBAP](https://github.com/sdk2035/OpenBAP) | AI-assisted enterprise modernization platform combining Apache OFBiz, GraalVM/Truffle and OpenXava for semantic reconstruction, legacy ABAP interoperability and incremental ERP migration |
+| [GraalCOBOL](https://github.com/sdk2035/GraalCOBOL) | Proposed COBOL modernization architecture combining Rascal MPL analysis, a versioned intermediate representation and Truffle/GraalVM execution, with mainframe training and Cobrix–Trino data integration |
 
 OpenBAP focuses on semantic-first modernization: extracting legacy ERP metadata and business rules, mapping them to an open enterprise model, validating reconstructed behavior and supporting staged migration without reproducing proprietary application-server internals.
+
+#### GraalCOBOL — COBOL Modernization and Mainframe Integration
+
+[GraalCOBOL](https://github.com/sdk2035/GraalCOBOL) proposes an architecture to
+**analyze, migrate and execute an explicitly defined subset of COBOL** using
+**Rascal MPL, Truffle and GraalVM**, with gradual integration into existing systems.
+Its focus is preserving business behavior while making legacy logic, data
+contracts and migration boundaries explicit—particularly relevant to banking,
+payroll and other transaction-oriented enterprise applications.
+
+The design connects five workstreams:
+
+- **Language analysis and migration:** a COBOL frontend built with Rascal MPL,
+  source and copybook traceability, dependency analysis and reviewable
+  transformations. A versioned intermediate representation separates migration
+  tooling from the proposed Truffle runtime.
+- **Execution and enterprise integration:** explicit decimal, storage and
+  calling semantics; host Java and service adapters; differential tests against
+  a reference runtime; staged coexistence and rollback.
+- **Mainframe laboratory:** Hercules/Hyperion emulation and an emulator-upgrade
+  plan, with guest operating systems and CICS/DB2 environments provisioned
+  separately. IBM i/AS400 follows a distinct training path.
+- **Data engineering:** Cobrix-based record decoding, a proposed
+  Spark → Iceberg → Trino pipeline, a Java/JDBC client adapter and an optional
+  future read-only Trino connector.
+- **Applied training:** Payroll as the batch case, with Mastering JCL,
+  Cash Account COBOL and WebJCL as complementary references for JCL,
+  CICS/DB2/Embedded SQL and browser-based job workflows. Assessment covers
+  demonstrated skills separately from declared years of professional experience.
+
+Within the portfolio, this provides a COBOL-specific architecture workstream
+alongside JFXLEGACY2MODERN's modernization scope, JFXETL4DE's data pipelines and
+JFXICP's interoperability patterns. These are proposed connections requiring
+their own contracts and validation.
+
+**Status: architecture and documentation; no executable GraalCOBOL runtime or
+deployed adapters yet.** Compatibility, migration equivalence and performance
+remain implementation and validation goals.
+
+[Integration architecture](https://github.com/sdk2035/GraalCOBOL/blob/main/docs/architecture/integration.md)
+· [Rascal MPL design](https://github.com/sdk2035/GraalCOBOL/blob/main/docs/architecture/rascal-cobol.md)
+· [Cobrix–Trino](https://github.com/sdk2035/GraalCOBOL/blob/main/docs/architecture/cobrix-trino.md)
+· [Training laboratory](https://github.com/sdk2035/GraalCOBOL/blob/main/docs/training/mainframe-lab.md)
+· [Reference projects and review findings](https://github.com/sdk2035/GraalCOBOL/blob/main/docs/references/projects.md)
 
 ### Modeling, Simulation and Digital Twins
 
@@ -149,7 +195,6 @@ Kubernetes operations; it remains a proposed integration with the JFX portfolio.
 | [GraalAugusta](https://github.com/sdk2035/GraalAugusta) | Augusta language implementation work targeting GraalVM |
 | [GraalOCaml](https://github.com/sdk2035/GraalOCaml) | OCaml language implementation work targeting GraalVM |
 | [GraalEiffel](https://github.com/sdk2035/GraalEiffel) | Eiffel language implementation work targeting GraalVM |
-| [GraalCOBOL](https://github.com/sdk2035/GraalCOBOL) | COBOL language implementation work targeting GraalVM |
 
 ### 3D Modeling, CAD and Educational Visualization
 
