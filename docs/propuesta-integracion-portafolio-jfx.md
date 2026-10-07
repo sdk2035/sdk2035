@@ -1,18 +1,18 @@
 # Component Integration Proposal for the JFX Portfolio
 
-**Review:** October 4, 2026, Lima time.  
+**Review:** October 6, 2026, Lima time (original inventory: October 4).  
 **Scope:** restructuring of the file “propuesta categorizada estratégicamente.txt” and an integration proposal.  
-**Result:** 69 original references classified: 67 external components, tools or resources and two references to host projects. Not every item is an installable package.
+**Result:** 70 references classified: the 69 original references plus llm-d, comprising 68 external components, tools or resources and two references to host projects. Not every item is an installable package.
 
-> Translation note: this English version preserves the recommendations and verification findings of the October 4 analysis. Statements about implementation status and repository locations refer to that review, rather than subsequent portfolio changes.
+> Status update: completed work in the [JFXAI4ARCH technical RAG pilot](https://github.com/robotics-intelligent-systems/jfxai4arch/blob/main/docs/rag/PILOT.md) has been removed from the pending actions below. Catalog entries remain as component references. Other integrations remain proposals unless implementation evidence is cited.
 
 ## 1. Main Recommendation
 
 Organize adoption around **shared services and domain-specific adapters**. Each JFX project should retain its models, data and decisions; AI infrastructure can be reused without turning the entire portfolio into a single application or requiring every component to run within GraalVM.
 
-The first selection should favor a small, verifiable workflow. I propose starting with technical RAG and observability in **JFXAI4ARCH**, then demonstrating a domain integration in **JFXAI4DIA**, **JFXLMS4AIR** or **JFXFMIS**, depending on available data and teams.
+The next step is to validate the existing technical RAG baseline in **JFXAI4ARCH** with an approved corpus, a real local model and a live Langfuse backend, then demonstrate a domain integration in **JFXAI4DIA**, **JFXLMS4AIR** or **JFXFMIS**, depending on available data and teams.
 
-The destinations and priorities in this document are **architecture recommendations**, inferred from the projects' published scope. They do not represent integrations that have already been implemented. The review checked repository metadata and READMEs for the main destinations and ambiguous components; it did not compile or audit all the code.
+The destinations and priorities in this document are **architecture recommendations**, inferred from the projects' published scope. They do not imply implemented integrations, except for the explicitly documented JFXAI4ARCH baseline. The review checked repository metadata and READMEs for the main destinations and ambiguous components; it did not compile or audit all the code.
 
 ## 2. Corrections to the Original List
 
@@ -37,7 +37,7 @@ The destinations and priorities in this document are **architecture recommendati
 
 | Verified project | Proposed responsibility | First useful deliverable |
 | --- | --- | --- |
-| [JFXAI4ARCH](https://github.com/robotics-intelligent-systems/jfxai4arch) | Shared RAG services, agent tools, inference and traceability | Documentation queries with citations and a reproducible record of each answer |
+| [JFXAI4ARCH](https://github.com/robotics-intelligent-systems/jfxai4arch) | Shared RAG services, agent tools, inference and traceability | Validate the existing local RAG baseline on approved documents and a real model; verify live telemetry |
 | [JFXAI4NLP](https://github.com/robotics-intelligent-systems/jfxai4nlp) | Language extraction, code intelligence and evaluation | Labeled dataset and comparison of extractors/evaluators |
 | [JFXAI4DIA](https://github.com/robotics-intelligent-systems/jfxai4dia) | CAD artifact generation and validation | Text to candidate STEP, geometry validation and visualization |
 | [JFXLMS4AIR](https://github.com/robotics-intelligent-systems/jfxlms4air) | Localization, mapping and perception for inspection | Change detection across two versioned LiDAR captures |
@@ -163,13 +163,14 @@ In each row, the function comes from the repository consulted; the destination a
 | [sdk2035/mcp-memory-service](https://github.com/sdk2035/mcp-memory-service) · [upstream](https://github.com/doobidoo/mcp-memory-service) | Persistent agent memory with APIs and MCP | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch), [jfxai4nlp](https://github.com/robotics-intelligent-systems/jfxai4nlp) | Optional memory service separate from the evidence repository; partition by user, project and retention policy. | P1 |
 | [sdk2035/ray](https://github.com/sdk2035/ray) · [upstream](https://github.com/ray-project/ray) | Distributed computing and AI libraries | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch), [jfxengine](https://github.com/sdk2035/jfxengine) | Job executor when measured workload justifies distribution; begin with simple workers. | P2 |
 | [sdk2035/kserve](https://github.com/sdk2035/kserve) · [upstream](https://github.com/kserve/kserve) | Inference serving on Kubernetes | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch) | Deployment profile for teams already operating Kubernetes; not a prerequisite for the first pilot. | P2 |
+| [sdk2035/llm-d](https://github.com/sdk2035/llm-d) · [upstream](https://github.com/llm-d/llm-d) | Distributed LLM inference serving on Kubernetes, with cache-aware routing and prefill/decode disaggregation | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch) | Optional external inference service over model servers such as vLLM; evaluate only when workload and accelerator capacity justify distributed serving. Compare time to first token, inter-token latency, throughput and resource cost against a simple serving baseline; verify Kubernetes, network and model compatibility. | P2 |
 | [sdk2035/langflow](https://github.com/sdk2035/langflow) · [upstream](https://github.com/langflow-ai/langflow) | AI flow and agent builder | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch), [jfxai4nlp](https://github.com/robotics-intelligent-systems/jfxai4nlp) | Optional authoring tool; export/version flows and keep execution contracts independent. | P1 |
 | [sdk2035/AutoGPT](https://github.com/sdk2035/AutoGPT) · [upstream](https://github.com/Significant-Gravitas/AutoGPT) | Agent platform and tools | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch) | Experimental orchestration alternative; evaluate components and licenses before selecting it alongside another orchestrator. | P2 |
 | [sdk2035/relevanceai](https://github.com/sdk2035/relevanceai) · [upstream](https://github.com/RelevanceAI/relevanceai) | SDK for the Relevance AI platform | [jfxai4crm](https://github.com/robotics-intelligent-systems/jfxai4crm), [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch) | Optional external connector; requires an account and service terms, and is not equivalent to a fully self-hosted platform. | P2 |
-| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Observability and evaluation for LLM applications | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch), [jfxai4nlp](https://github.com/robotics-intelligent-systems/jfxai4nlp) | Common contract for traces, versions, evaluations and metrics; check for duplication with existing observability. | P0 |
+| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Observability and evaluation for LLM applications | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch), [jfxai4nlp](https://github.com/robotics-intelligent-systems/jfxai4nlp) | The local metadata adapter exists in JFXAI4ARCH. Remaining: provision and validate a live local backend, then assess evaluation and trace requirements beyond status, evidence count and duration. | P0 |
 | [sdk2035/semantic-caching-with-redis-langcache](https://github.com/sdk2035/semantic-caching-with-redis-langcache) · [upstream](https://github.com/redis-developer/semantic-caching-with-redis-langcache) | Semantic caching demonstration using Redis LangCache | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch) | Reference for an experiment with invalidation, tenant separation and stale-answer measurement. | R |
 | [sdk2035/mlx](https://github.com/sdk2035/mlx) · [upstream](https://github.com/ml-explore/mlx) | Array and ML framework targeting Apple silicon | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch), [jfxai4nlp](https://github.com/robotics-intelligent-systems/jfxai4nlp) | Optional backend for compatible workstations; separate this profile from Linux/CUDA deployment and measure specific models. | P2 |
-| [sdk2035/llama_index](https://github.com/sdk2035/llama_index) · [upstream](https://github.com/run-llama/llama_index) | Document processing and retrieval for AI | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch), [jfxai4nlp](https://github.com/robotics-intelligent-systems/jfxai4nlp) | Initial ingestion/RAG pipeline with citations, document versions and retrieval tests. | P0 |
+| [sdk2035/llama_index](https://github.com/sdk2035/llama_index) · [upstream](https://github.com/run-llama/llama_index) | Document processing and retrieval for AI | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch), [jfxai4nlp](https://github.com/robotics-intelligent-systems/jfxai4nlp) | Local Markdown/TXT retrieval, evidence provenance and retrieval tests already exist in JFXAI4ARCH. Remaining: approved corpus, held-out evaluation and comparison of dense retrieval against BM25. | P0 |
 | [sdk2035/cohere-toolkit](https://github.com/sdk2035/cohere-toolkit) · [upstream](https://github.com/cohere-ai/cohere-toolkit) | Components and examples for RAG applications | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch), [jfxai4crm](https://github.com/robotics-intelligent-systems/jfxai4crm) | Reference or alternative accelerator; isolate provider dependencies through the model gateway. | P2 |
 | [Sumanth077/Hands-On-AI-Engineering](https://github.com/Sumanth077/Hands-On-AI-Engineering) | Educational collection of OCR, RAG and agent projects | [jfxai4nlp](https://github.com/robotics-intelligent-systems/jfxai4nlp), [jfxlms](https://github.com/robotics-intelligent-systems/jfxlms) | Patterns and learning material; review the grounded_document_agent example before reusing code. | R |
 | [sdk2035/seekdb](https://github.com/sdk2035/seekdb) · [upstream](https://github.com/oceanbase/seekdb) | Search engine with vector and structured data | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch), [jfxai4nlp](https://github.com/robotics-intelligent-systems/jfxai4nlp) | Compare as a retrieval store; do not replace the transactional database without testing requirements. | P2 |
@@ -190,7 +191,7 @@ In each row, the function comes from the repository consulted; the destination a
 | [sdk2035/spec-for-codex](https://github.com/sdk2035/spec-for-codex) · [upstream](https://github.com/atman-33/spec-for-codex) | Extension for specification-driven development | [jfxlcdp](https://github.com/sdk2035/jfxlcdp) | Evaluate specification format and export in the contribution workflow. | R |
 | [sdk2035/spec-for-codex-ide](https://github.com/sdk2035/spec-for-codex-ide) · [upstream](https://github.com/atman-33/spec-for-codex-ide) | IDE extension for specifications and assistants | [jfxlcdp](https://github.com/sdk2035/jfxlcdp) | Compare with spec-for-codex and choose one experience, avoiding functional duplication. | R |
 | [sdk2035/tasktrooper](https://github.com/sdk2035/tasktrooper) · [upstream](https://github.com/makifbaysal/tasktrooper) | Task management and development-agent execution | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch) | Team tool for tasks/artifacts; using it does not turn the product into an autonomous-agent system. | R |
-| [sdk2035/bruno](https://github.com/sdk2035/bruno) · [upstream](https://github.com/usebruno/bruno) | API client and testing tool | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch), [jfxai4bpm](https://github.com/robotics-intelligent-systems/jfxai4bpm), [jfxscada](https://github.com/robotics-intelligent-systems/jfxscada) | Versioned collections for contracts, authentication, errors, retries and idempotency in adapters. | P0 |
+| [sdk2035/bruno](https://github.com/sdk2035/bruno) · [upstream](https://github.com/usebruno/bruno) | API client and testing tool | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch), [jfxai4bpm](https://github.com/robotics-intelligent-systems/jfxai4bpm), [jfxscada](https://github.com/robotics-intelligent-systems/jfxscada) | Health, Search and Answers checks already exist for JFXAI4ARCH. Extend collections only for new domain contracts, error cases, retries and idempotency. | P0 |
 
 ### 5.9. Scientific Computing and Interoperability
 
@@ -249,20 +250,22 @@ The attachment's final list mixes languages, runtimes, libraries, managed servic
 | Packaging | Docker containers per worker; reproducible configuration | GPU, devices and native runtimes need explicit profiles |
 | Optional AWS | ECS for services/containers, S3 for artifacts, RDS for the PostgreSQL option and CloudWatch for operations | Lambda and API Gateway for tasks/adapters suited to their limits; do not assume every simulation or GPU workload fits Lambda |
 | Infrastructure as code | Choose Terraform or CloudFormation according to the operating environment | Do not maintain two divergent descriptions of the same infrastructure |
-| Scaling | Simple workers initially; Ray when distributed computing is needed, KServe when Kubernetes is already operated for inference | These are different responsibilities; they can coexist when a measured need justifies it |
+| Scaling | Simple workers initially; Ray for distributed computing, KServe for inference serving on Kubernetes, and llm-d for distributed LLM serving when measured demand justifies it | These are different responsibilities; they can coexist when a measured need justifies it |
 | APIs | REST for jobs/artifacts; events or WebSocket for progress and telemetry | GraphQL is optional for aggregate queries; gRPC may serve internal contracts. MCP exposes tools, not a replacement for every protocol |
 | Testing | Unit, API contract, integration and domain-specific scientific tests | Bruno helps test APIs; jevals/AnyJev/open-jev do not replace geometry, semantics or hardware tests |
 | Continuous delivery | CI/CD with pinned versions, artifacts and test results | Record code, models, datasets, configurations and firmware separately |
 
 Compatibility with native extensions and platforms must be evaluated for the selected versions; the [GraalPy documentation](https://www.graalvm.org/latest/python/docs/) distinguishes support by platform and package. The proposal does not presume speed improvements from switching runtimes.
 
-## 7. Proposed Pilots and Acceptance Criteria
+## 7. Remaining Pilot Work and Acceptance Criteria
 
-The quantities below are planning starting points, not quality estimates or performance commitments. Run the shared pilot first, then select a domain.
+The quantities below are planning starting points, not quality estimates or performance commitments. Complete validation of the existing shared pilot, then select a domain.
+
+Completed baseline work is excluded from this backlog: local Markdown/TXT loading, LlamaIndex/BM25 retrieval, source/line/hash evidence, authenticated APIs, Ollama fallback handling, a Langfuse metadata adapter and Bruno requests. The [pilot documentation](https://github.com/robotics-intelligent-systems/jfxai4arch/blob/main/docs/rag/PILOT.md#verification) reports 22 automated tests and three passing Bruno requests/tests. These reported checks were not rerun for this documentation update; they do not establish real-model quality or a working Langfuse deployment.
 
 | Pilot | Project and selection | Deliverable | Criterion for deciding whether to continue |
 | --- | --- | --- | --- |
-| A. Technical assistant with evidence | JFXAI4ARCH + JFXAI4NLP; LlamaIndex, Langfuse and Bruno | Ingestion of authorized documents, queries with citations and a trace for each execution | Compare answers over approximately 50 reviewed questions; measure retrieval, citation support, abstention, latency and cost; set thresholds before evaluation |
+| A. Validate and extend the technical assistant | JFXAI4ARCH; JFXAI4NLP remains a proposed evaluation partner | Approved technical corpus, real local model validation and verified live Langfuse metadata; compare dense retrieval against the existing BM25 baseline | Curate at least 50 independent questions with relevant passages and unanswerable cases; separate development and held-out sets. Measure retrieval, claim support, citation validity, unsupported answers, p50/p95 latency and resource cost; set thresholds before evaluation |
 | B. Verifiable text-to-CAD | JFXAI4DIA + JFXENGINE; STEP-LLM and a geometry validator | Candidate STEP generator with a report and viewer | Test approximately 20 simple parts; measure validity, units, dimensions, geometry and failures. A renderable image is not sufficient for manufacturing acceptance |
 | C. Change inspection | JFXLMS4AIR; Chamelion, project-owned scenes/datasets and Habitat when it contributes a useful task | Detection of added and removed elements between captures | Measure precision, recall, registration error and time; compare against a baseline over annotated changes |
 | D. Agricultural scenarios | JFXFMIS; AquaCrop-OSPy, ISOBlue or existing records | Water/crop scenario and telemetry comparison tool | Validate inputs/units, reproducibility and local calibration; present decisions as scenarios without automating irrigation from the LLM |
@@ -271,7 +274,7 @@ The quantities below are planning starting points, not quality estimates or perf
 **Suggested execution order:**
 
 1. Inventory versions, data availability and ownership; select one provider/model and one storage path per pilot.
-2. Build contracts and a deterministic baseline; add AI only where its contribution can be compared.
+2. Reuse the existing JFXAI4ARCH API and BM25 baseline for pilot A; define missing contracts and baselines for the selected domain pilot.
 3. Run tests, record failures and review the adoption decision.
 4. Introduce distribution, persistent memory or semantic caching only after measuring the bottleneck.
 
@@ -292,7 +295,7 @@ flowchart TB
 
 - **Rascal, Spoon and MPS:** Rascal for rules and languages, Spoon as a specialized Java extractor, MPS when DSL authoring is needed. They are not three interchangeable engines for the same task.
 - **Langflow, AutoGPT and Relevance AI:** evaluate authoring/orchestration/connector alternatives; do not declare all of them mandatory dependencies.
-- **Ray and KServe:** distinguish distributed computing from inference serving on Kubernetes.
+- **Ray, KServe and llm-d:** distinguish distributed computing, Kubernetes inference serving and distributed LLM-serving optimizations. Evaluate compatible combinations when needed; none is a prerequisite for the local RAG pilot.
 - **Habitat and Video to Data:** navigation/embodied tasks versus reconstruction and learning from demonstrations. Choose according to task, environment and robot.
 - **AquaCrop, PixSim, TreeSim and TiMBA:** crop/water, spatial forest growth, individual trees and forest economics, respectively. Combining them requires compatible models and scales.
 - **COMPAS Timber and hyperwood-bench:** design tool versus product example; both fit CAD/manufacturing better than agronomic simulation.
@@ -323,3 +326,5 @@ The inventory covered **47 JFX repositories** visible under `robotics-intelligen
 To classify destinations, the review read the READMEs of JFXAI4ARCH, JFXAI4NLP, JFXAI4DIA, JFXLMS4AIR, JFXAI4CV, JFXAI4BSS, JFXFMIS, JFXOSMS, JFXSCADA, JFXAI4RSS, JFXAI4BIO, JFXAI4BPM, JFXAI4CRM, JFXAI4OHS and JFXRTESS. It also reviewed READMEs for components whose names or original descriptions could be misleading, such as TiMBA, PixSim, TreeSim, Juliana.jl, hyperwood-bench, the two Backpack projects, ABAP MCP, Relevance AI and Julia4J.
 
 Each row links to the component source and, where a fork exists, its declared upstream. The recommendations for destinations, priorities, contracts and pilots are the proposed work in this document. No packages were installed, no models or simulations were run, and no GitHub repositories were modified during the original analysis.
+
+The October 6 update reviewed the llm-d fork README and declared upstream, the current sdk2035 profile, and JFXAI4ARCH's pilot implementation report. The catalog now includes llm-d; completed baseline tasks were removed from pending work while real-model, live-telemetry and domain validation remain open.
