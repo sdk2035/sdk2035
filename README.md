@@ -133,11 +133,13 @@ applications remain separately cataloged by Robotics & Intelligent Systems.
 | Project | Focus and complementary role |
 | --- | --- |
 | [jfxlcdp](https://github.com/sdk2035/jfxlcdp) | Reference architecture for metadata-driven low-code authoring, declarative JavaFX interfaces and AI-assisted systems engineering |
-| [jfxlegacy2modern](https://github.com/sdk2035/jfxlegacy2modern) | AI-assisted legacy modernization architecture: source analysis, architecture recovery, candidate transformations and behavior-preserving validation |
+| [jfxlegacy2modern](https://github.com/sdk2035/jfxlegacy2modern) | AI-assisted legacy modernization architecture: source analysis, behavior-preserving validation, proposed open-source ERP support, cross-product migration and staged version upgrades, with a Frappe-dependent low-code module |
 | [jfxetl4de](https://github.com/sdk2035/jfxetl4de) | Data-engineering integration laboratory for ETL/ELT, streaming, lakehouse workflows, data contracts and engineering-data pipelines |
 | [jfxicp](https://github.com/sdk2035/jfxicp) | Reference architecture for cloud and polyglot interoperability, distributed engineering computing and co-simulation |
 | [jfxengine](https://github.com/sdk2035/jfxengine) | Research and architecture connecting MBSE/SysML, 3D visualization, simulation and digital twins with AI-assisted engineering workflows |
 | [jfxmodelica](https://github.com/sdk2035/jfxmodelica) | JFXModelica Cloud AI: modeling, multiphysics simulation and digital-twin platform work around GraalModelica |
+
+JFXLEGACY2MODERN's [ERP modernization specification](https://github.com/sdk2035/jfxlegacy2modern/blob/main/docs/erp-modernization.md) distinguishes operational support, upgrades within one ERP and migration between products. Reference plans cover **Odoo Community 11.0 → 15.0**, **ERPNext 11 → 15** and **Odoo Community 11.0 → ERPNext 15**, with compatibility checks, data reconciliation, cutover and rollback. Its proposed [`erp-low-code` module](https://github.com/sdk2035/jfxlegacy2modern/tree/main/modules/erp-low-code) declares Frappe as a required runtime dependency for that profile. These are documented designs and declarative plans; ERP connectors, upgrade execution and the low-code app still require implementation and testing.
 
 The proposed responsibilities are complementary: JFXLCDP authors specifications
 and interfaces; JFXLEGACY2MODERN analyzes and transforms existing software;
