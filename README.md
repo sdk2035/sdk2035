@@ -201,7 +201,7 @@ Kubernetes operations; it remains a proposed integration with the JFX portfolio.
 | [GraalIKVM](https://github.com/sdk2035/GraalIKVM) | Interoperability initiative connecting IKVM.NET concepts with GraalVM and Truffle | Concept | `█░░░░░░░░░` ~10% | Draft a bounded JVM/.NET interop spike with marshaling and exception tests. |
 | [TruffleMono](https://github.com/sdk2035/TruffleMono) | AST interpreter infrastructure and IKVM/Mono integration research | Concept | `█░░░░░░░░░` ~10% | Define a minimal CIL instruction subset and interpreter fixtures. |
 | [rascal-mono](https://github.com/sdk2035/rascal-mono) | Rascal-based language tooling with ECMA CLI, C# and .NET integration scope | Concept | `█░░░░░░░░░` ~10% | Draft a C# extraction fixture and expected M3 facts. |
-| [asharplang](https://github.com/sdk2035/asharplang) | A# (A Sharp), an Ada-to-.NET port project | Imported sources; build unverified | N/A · assessment pending | Inventory the imported mgnat sources and draft a reproducible build plan. |
+| [asharplang](https://github.com/sdk2035/asharplang) | A# (A Sharp), an Ada-to-.NET port project; [MGNAT inventory and build plan](https://github.com/sdk2035/asharplang/blob/main/docs/mgnat-inventory.md) documented | Assessment documented; compiler sources absent; build unverified | N/A · source recovery pending | Recover original MGNAT/A# sources with verified provenance, licenses, checksums and a pinned dependency manifest. |
 | [jsharplang](https://github.com/sdk2035/jsharplang) | JSharp.NET (J#), a Java-oriented language transition project for the .NET ecosystem | Concept | `█░░░░░░░░░` ~10% | Define a Java/J#-to-CIL subset and compiler acceptance fixtures. |
 
 ### Metaprogramming and Language Workbenches
