@@ -2,7 +2,7 @@
 
 Reviewed: 2026-10-11.
 
-76 repositories from the personal and organizational profiles: 73 new public projects and 3 reused organizational projects. Each has one newly registered open work item: 74 open issues and 2 project drafts (issues disabled in llm-d and jfxai4dia). Existing items and project history remain available.
+76 repositories from the personal and organizational profiles: 73 new public projects and 3 reused organizational projects. Each has one newly registered open work item: 75 open issues and 1 project draft (issues disabled in llm-d). Existing items and project history remain available.
 
 ## Sources and workflow
 
@@ -62,7 +62,7 @@ New projects use GitHub’s Iterative development views and fields. Open items b
 | [jfxscada](https://github.com/robotics-intelligent-systems/jfxscada) | [Project](https://github.com/orgs/robotics-intelligent-systems/projects/12) | [Issue](https://github.com/robotics-intelligent-systems/jfxscada/issues/1) | Draft one read-only telemetry adapter and replayable alarm fixture. |
 | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch) | [Project](https://github.com/orgs/robotics-intelligent-systems/projects/2) | [Issue](https://github.com/robotics-intelligent-systems/jfxai4arch/issues/4) | Draft a source-grounded evaluation set and validate optional local-model generation. |
 | [jfxai4bio](https://github.com/robotics-intelligent-systems/jfxai4bio) | [Project](https://github.com/orgs/robotics-intelligent-systems/projects/13) | [Issue](https://github.com/robotics-intelligent-systems/jfxai4bio/issues/1) | Specify one public-dataset analysis workflow with reproducibility checks. |
-| [jfxai4dia](https://github.com/robotics-intelligent-systems/jfxai4dia) | [Project](https://github.com/orgs/robotics-intelligent-systems/projects/14) | [Draft](https://github.com/orgs/robotics-intelligent-systems/projects/14/views/3?pane=issue&itemId=268510208) | Specify one CAD-to-simulation case with units and validation evidence. |
+| [jfxai4dia](https://github.com/robotics-intelligent-systems/jfxai4dia) | [Project](https://github.com/orgs/robotics-intelligent-systems/projects/14) | [Issue #2](https://github.com/robotics-intelligent-systems/jfxai4dia/issues/2) | Specify one CAD-to-simulation case with units and validation evidence. |
 | [jfxai4cv](https://github.com/robotics-intelligent-systems/jfxai4cv) | [Project](https://github.com/orgs/robotics-intelligent-systems/projects/15) | [Issue](https://github.com/robotics-intelligent-systems/jfxai4cv/issues/1) | Draft a de-identified research imaging fixture and segmentation evaluation criteria. |
 | [jfxai4nlp](https://github.com/robotics-intelligent-systems/jfxai4nlp) | [Project](https://github.com/orgs/robotics-intelligent-systems/projects/16) | [Issue](https://github.com/robotics-intelligent-systems/jfxai4nlp/issues/1) | Draft an extraction schema, labeled sample set and evaluation criteria. |
 | [jfxai4cbs](https://github.com/robotics-intelligent-systems/jfxai4cbs) | [Project](https://github.com/orgs/robotics-intelligent-systems/projects/17) | [Issue](https://github.com/robotics-intelligent-systems/jfxai4cbs/issues/1) | Define an isolated defensive log-analysis exercise and detection metrics. |
@@ -361,7 +361,8 @@ Existing Markdown references:
 
 - 76 unique repositories; 76 projects confirmed public in project settings.
 - 76 initial work items confirmed in their project views.
-- 74 issue creation responses report state open; 2 draft items include descriptions.
+- 75 issues confirmed open; the remaining llm-d draft includes its description.
+- JFXAI4DIA draft item 268510208 converted in place to issue #2 on 2026-10-11, retaining its description, project membership and Backlog status.
 - 62 CAD artwork links checked against repository trees: none missing.
 - CAD gaps are recorded in the relevant open work items; specification completion and engineering tests are future work.
 
