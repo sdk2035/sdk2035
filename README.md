@@ -29,6 +29,8 @@ and a proposed next task that AI can help draft, implement or test.
 
 ## Explore
 
+- [Public projects and AI-assisted backlog](#public-projects-and-ai-assisted-backlog)
+
 - [Engineering Focus](#engineering-focus)
 - [Personal Project Portfolio](#personal-project-portfolio)
   - [Project Progress Guide](#reading-the-progress-bars)
@@ -46,6 +48,10 @@ and a proposed next task that AI can help draft, implement or test.
 - [JFX Portfolio Integration Proposal](docs/propuesta-integracion-portafolio-jfx.md)
 - [Technology Stack](#technology-stack)
 - [Collaboration](#collaboration)
+
+## Public projects and AI-assisted backlog
+
+[Complete Markdown register](https://github.com/sdk2035/sdk2035/blob/main/docs/public-projects-and-cad-backlog.md) — reviewed 2026-10-11: **76 public projects** (29 personal and 47 organizational), **74 open issues**, **2 project drafts** and the specification audit for **62 CAD concepts**. The register links each repository, project, initial work item and proposed next iteration, and records missing or partial Markdown specifications.
 
 ## Engineering Focus
 
@@ -82,8 +88,9 @@ measured completion percentages, effort estimates or delivery commitments.
 **N/A** means a local integration milestone is not defined or inherited source
 has not been assessed. Upstream maturity does not measure this portfolio's work.
 Tasks are **AI-assisted proposals**, inferred from documented scope and gaps,
-rather than an approved issue backlog. Maintainers review generated artifacts
-and acceptance evidence. This snapshot is updated manually as milestones change.
+now registered as initial work items in the linked public-project register.
+Registration does not establish accepted implementation or delivery commitments.
+Maintainers review generated artifacts and acceptance evidence. This snapshot is updated manually as milestones change.
 
 ### Enterprise Modernization and Business Platforms
 
