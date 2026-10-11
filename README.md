@@ -208,7 +208,7 @@ Kubernetes operations; it remains a proposed integration with the JFX portfolio.
 
 | Project | Focus | Status | Estimated progress | Next AI-assisted task (proposed) |
 | --- | --- | --- | --- | --- |
-| [GraalRascal](https://github.com/sdk2035/GraalRascal) | Rascal metaprogramming language work targeting GraalVM | Concept | `█░░░░░░░░░` ~10% | Define a Rascal expression subset and reference interpreter fixtures. |
+| [GraalRascal](https://github.com/sdk2035/GraalRascal) | Proposed Rascal subset on GraalVM/Truffle; [technical requirements](https://github.com/sdk2035/GraalRascal/blob/main/docs/requirements/specification.md) and [high-level draw.io architecture](https://github.com/sdk2035/GraalRascal/blob/main/docs/diagrams/README.md) documented | Architecture documented; [PR #1 merged](https://github.com/sdk2035/GraalRascal/pull/1); runtime pending | `██░░░░░░░░` ~20% | [GR-REQ-001](https://github.com/sdk2035/GraalRascal/blob/main/docs/requirements/next-ai-task.md): define an expression grammar, pin a Rascal reference version and execute positive/negative fixtures before implementing the runtime. |
 | [rascal-latino](https://github.com/sdk2035/rascal-latino) | Rascal metaprogramming with a Latino core implementation | Concept | `█░░░░░░░░░` ~10% | Draft one Latino AST transformation and traceability fixture. |
 | [GraalLatino](https://github.com/sdk2035/GraalLatino) | Latino language implementation work targeting GraalVM | Concept | `█░░░░░░░░░` ~10% | Define the first Latino grammar subset and execution fixtures. |
 
