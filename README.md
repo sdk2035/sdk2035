@@ -42,6 +42,7 @@ and a proposed next task that AI can help draft, implement or test.
   - [Scientific Computing Languages](#scientific-computing-languages)
   - [JVM and .NET Interoperability](#jvm-and-net-interoperability)
   - [Metaprogramming and Language Workbenches](#metaprogramming-and-language-workbenches)
+  - [Rust and Go on LLVM / Sulong](#rust-and-go-on-llvm--sulong)
   - [Polyglot Language Projects](#polyglot-language-projects)
   - [3D Modeling, CAD and Educational Visualization](#3d-modeling-cad-and-educational-visualization)
 - [Selected Organization Projects](#selected-organization-projects)
@@ -51,7 +52,7 @@ and a proposed next task that AI can help draft, implement or test.
 
 ## Public projects and AI-assisted backlog
 
-[Complete Markdown register](https://github.com/sdk2035/sdk2035/blob/main/docs/public-projects-and-cad-backlog.md) — reviewed 2026-10-11: **76 public projects** (29 personal and 47 organizational), **75 open issues**, **1 project draft** and the specification audit for **62 CAD concepts**. The register links each repository, project, initial work item and proposed next iteration, and records missing or partial Markdown specifications.
+[Complete Markdown register](https://github.com/sdk2035/sdk2035/blob/main/docs/public-projects-and-cad-backlog.md) — reviewed 2026-10-11: **76 public projects** (29 personal and 47 organizational), **75 open issues**, **1 project draft** and the specification audit for **62 CAD concepts**. The register is a historical snapshot; GraalRust and GraalGo were added on 2026-10-12 and are documented in the [LLVM/Sulong supplement](docs/llvm-language-projects.md). The register links each repository, project, initial work item and proposed next iteration, and records missing or partial Markdown specifications.
 
 ## Engineering Focus
 
@@ -65,7 +66,7 @@ and a proposed next task that AI can help draft, implement or test.
 
 ## Personal Project Portfolio
 
-The following **29 repositories under sdk2035** are grouped by their primary focus.
+The following **31 repositories under sdk2035** are grouped by their primary focus.
 This curated portfolio includes the complementary JFX projects now hosted here;
 it is not an inventory of every repository or upstream fork in the account.
 Descriptions summarize project scope; implementation status, supported features,
@@ -218,6 +219,24 @@ Kubernetes operations; it remains a proposed integration with the JFX portfolio.
 | [GraalRascal](https://github.com/sdk2035/GraalRascal) | Proposed Rascal subset on GraalVM/Truffle; [technical requirements](https://github.com/sdk2035/GraalRascal/blob/main/docs/requirements/specification.md) and [high-level draw.io architecture](https://github.com/sdk2035/GraalRascal/blob/main/docs/diagrams/README.md) documented | Architecture documented; [PR #1 merged](https://github.com/sdk2035/GraalRascal/pull/1); runtime pending | `██░░░░░░░░` ~20% | [GR-REQ-001](https://github.com/sdk2035/GraalRascal/blob/main/docs/requirements/next-ai-task.md): define an expression grammar, pin a Rascal reference version and execute positive/negative fixtures before implementing the runtime. |
 | [rascal-latino](https://github.com/sdk2035/rascal-latino) | Rascal metaprogramming with a Latino core implementation | Concept | `█░░░░░░░░░` ~10% | Draft one Latino AST transformation and traceability fixture. |
 | [GraalLatino](https://github.com/sdk2035/GraalLatino) | Latino language implementation work targeting GraalVM | Concept | `█░░░░░░░░░` ~10% | Define the first Latino grammar subset and execution fixtures. |
+
+### Rust and Go on LLVM / Sulong
+
+One repository per language: **TruffleRust** and **TruffleGo** are conceptual
+aliases inside GraalRust and GraalGo. These are independent portfolio initiatives,
+not official GraalVM language distributions or delivered AST interpreters.
+
+| Project | Target language | Proposed GraalVM mechanism | Technical status | Next task |
+| --- | --- | --- | --- | --- |
+| [GraalRust](https://github.com/sdk2035/GraalRust) · TruffleRust alias | Rust 🦀 | rustc → LLVM bitcode → Sulong (Truffle) | Experimental / academic workstream; architecture documented; execution unvalidated | GRUST-001: pin compatible versions and validate one bounded native/bitcode fixture. |
+| [GraalGo](https://github.com/sdk2035/GraalGo) · TruffleGo alias | Go 🐹 | Candidate LLVM frontend (TinyGo) → LLVM bitcode → Sulong (Truffle) | Experimental / research; runtime compatibility unvalidated | GGO-001: assess TinyGo artifacts, runtime dependencies and one differential fixture. |
+
+Rust requires explicit checks for LLVM versions, ABI, linking and panic/runtime
+dependencies. Go uses TinyGo as a research candidate; the standard Go compiler
+is not the proposed bitcode producer. Bitcode generation alone establishes
+neither full language support nor successful Sulong execution.
+
+[LLVM/Sulong research specification](docs/llvm-language-projects.md)
 
 ### Polyglot Language Projects
 
