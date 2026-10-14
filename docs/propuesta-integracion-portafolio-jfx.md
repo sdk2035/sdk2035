@@ -157,6 +157,8 @@ In each row, the function comes from the repository consulted; the destination a
 
 ### 5.6. Shared AI Services
 
+**llm-d integration status:** [sdk2035/llm-d](https://github.com/sdk2035/llm-d) is an upstream fork with local integration proposed for JFXAI4ARCH; a local milestone and progress estimate are not yet defined. The next proposed AI-assisted task is to draft a bounded local integration plan and benchmark criteria against upstream. This reference is maintained in the integration proposal rather than as a personal project entry in the profile.
+
 | Component and provenance | Function | Proposed destination | Connection and adoption condition | Priority |
 | --- | --- | --- | --- | --- |
 | [sdk2035/OpenShell](https://github.com/sdk2035/OpenShell) · [upstream](https://github.com/NVIDIA/OpenShell) | Isolated execution environment for agents | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch), [jfxai4cbs](https://github.com/robotics-intelligent-systems/jfxai4cbs) | Evaluate as a job runtime with bounded policies and credentials; verify its guarantees in the selected deployment. | P1 |
