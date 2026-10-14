@@ -38,7 +38,6 @@ and a proposed next task that AI can help draft, implement or test.
     - [GraalCOBOL: COBOL Modernization](#graalcobol--cobol-modernization-and-mainframe-integration)
   - [Modeling, Simulation and Digital Twins](#modeling-simulation-and-digital-twins)
   - [Complementary JFX Engineering Projects](#complementary-jfx-engineering-projects)
-  - [AI Infrastructure and Distributed Inference](#ai-infrastructure-and-distributed-inference)
   - [Scientific Computing Languages](#scientific-computing-languages)
   - [JVM and .NET Interoperability](#jvm-and-net-interoperability)
   - [Metaprogramming and Language Workbenches](#metaprogramming-and-language-workbenches)
@@ -66,7 +65,7 @@ and a proposed next task that AI can help draft, implement or test.
 
 ## Personal Project Portfolio
 
-The following **31 repositories under sdk2035** are grouped by their primary focus.
+The following **30 repositories under sdk2035** are grouped by their primary focus.
 This curated portfolio includes the complementary JFX projects now hosted here;
 it is not an inventory of every repository or upstream fork in the account.
 Descriptions summarize project scope; implementation status, supported features,
@@ -184,16 +183,6 @@ These roles describe an integration direction, not a single installed platform.
 Each repository defines its implementation status. For example, JFXLCDP currently
 contains documentation and design diagrams rather than a runnable low-code system.
 Cross-project adapters need explicit contracts, maintainers and reproducible tests.
-
-### AI Infrastructure and Distributed Inference
-
-| Project | Focus | Status | Estimated progress | Next AI-assisted task (proposed) |
-| --- | --- | --- | --- | --- |
-| [llm-d](https://github.com/sdk2035/llm-d) | Fork of [llm-d/llm-d](https://github.com/llm-d/llm-d): distributed LLM inference serving on Kubernetes, including cache-aware routing and prefill/decode disaggregation over model servers such as vLLM | Upstream fork; local integration proposed | N/A · local scope pending | Draft a bounded local integration plan and benchmark criteria against upstream. |
-
-A candidate for the JFXAI4ARCH inference workstream when measured demand justifies
-distributed serving. Adoption requires compatible accelerators, networking and
-Kubernetes operations; it remains a proposed integration with the JFX portfolio.
 
 ### Scientific Computing Languages
 
