@@ -2,7 +2,7 @@
 
 **Review date:** October 15, 2026  
 **Input:** `https github com sdk2035.txt` (69 GitHub repository links and two unlinked technology references)  
-**Status:** portfolio proposal; no dependency adoption or cross-repository implementation is implied.
+**Status:** portfolio proposal; transfer of the `sdk2035/webfx` fork to `open-graphics-initiative/webfx` is pending GitHub account verification. No dependency adoption or cross-repository implementation is implied.
 
 ## 1. Recommendation
 
@@ -30,7 +30,7 @@ Priority: **P1** = candidate for a bounded portfolio prototype; **P2** = evaluat
 
 | Repository | Proposed category and fit | Host / priority |
 | --- | --- | --- |
-| [webfx](https://github.com/sdk2035/webfx) | JavaFX application transpilation/browser delivery candidate; investigate alongside existing JFX deployment goals. | JFXLCDP / P2 |
+| [webfx](https://github.com/open-graphics-initiative/webfx) | JavaFX application transpilation/browser delivery candidate; the `sdk2035/webfx` fork of [webfx-project/webfx](https://github.com/webfx-project/webfx) is being transferred to the new organization. Use the destination link after GitHub completes the transfer. | JFXLCDP / P2 |
 | [promise](https://github.com/sdk2035/promise) | Asynchronous programming utility/reference; confirm language, API and relation to a concrete host before adoption. | JFXENGINE / R |
 | [B4J](https://github.com/sdk2035/B4J) | BASIC development environment/reference; potentially useful for education or legacy-language comparisons. | JDot / R |
 | [teavm](https://github.com/sdk2035/teavm) | JVM bytecode to browser/native compilation candidate. | JFXLCDP / P2 |
