@@ -1,8 +1,8 @@
 # Public projects and AI-assisted open work
 
-Reviewed: 2026-10-11.
+Reviewed: 2026-10-15.
 
-76 repositories from the personal and organizational profiles: 73 new public projects and 3 reused organizational projects. Each has one newly registered open work item: 75 open issues and 1 project draft (issues disabled in llm-d). Existing items and project history remain available.
+77 public projects across the personal and organizational profiles: 29 personal and 48 organizational. The register records 75 open issues and 1 project draft (issues disabled in llm-d); existing items and project history remain available.
 
 ## Sources and workflow
 
@@ -359,7 +359,7 @@ Existing Markdown references:
 
 ## Verification record
 
-- 76 unique repositories; 76 projects confirmed public in project settings.
+- 77 unique repositories; 77 projects confirmed public in project settings.
 - 76 initial work items confirmed in their project views.
 - 75 issues confirmed open; the remaining llm-d draft includes its description.
 - JFXAI4DIA draft item 268510208 converted in place to issue #2 on 2026-10-11, retaining its description, project membership and Backlog status.
