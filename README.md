@@ -46,6 +46,7 @@ and a proposed next task that AI can help draft, implement or test.
   - [3D Modeling, CAD and Educational Visualization](#3d-modeling-cad-and-educational-visualization)
 - [Selected Organization Projects](#selected-organization-projects)
 - [JFX Portfolio Integration Proposal](docs/propuesta-integracion-portafolio-jfx.md)
+- [Web Graphics and 3D Integration Proposal](docs/propuesta-integracion-graficos-webfx.md)
 - [Technology Stack](#technology-stack)
 - [Collaboration](#collaboration)
 
