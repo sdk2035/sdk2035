@@ -6,7 +6,7 @@
 
 Lima, Peru · Open to remote opportunities across LATAM and the U.S., technical partnerships and collaborative R&D.
 
-[LinkedIn](https://www.linkedin.com/in/kjsanc) · [Email](mailto:kjsanc@gmail.com) · [Personal repositories](https://github.com/sdk2035?tab=repositories) · [Robotics & Intelligent Systems](https://github.com/robotics-intelligent-systems)
+[LinkedIn](https://www.linkedin.com/in/kjsanc) · [Email](mailto:kjsanc@gmail.com) · [Personal repositories](https://github.com/sdk2035?tab=repositories) · [Robotics & Intelligent Systems](https://github.com/robotics-intelligent-systems) · [Discord](https://discord.com/users/1560089627845468227)
 
 ## About
 
@@ -310,6 +310,6 @@ I welcome conversations about:
 For a project-specific proposal, start with an issue in the relevant repository.
 For professional opportunities and partnerships, connect through
 [LinkedIn](https://www.linkedin.com/in/kjsanc) or
-[email](mailto:kjsanc@gmail.com).
+[email](mailto:kjsanc@gmail.com), or [Discord](https://discord.com/users/1560089627845468227).
 
 *Build openly. Integrate intelligently. Validate with engineering.*
