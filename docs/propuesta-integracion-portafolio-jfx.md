@@ -2,7 +2,7 @@
 
 **Review:** October 6, 2026, Lima time (original inventory: October 4).  
 **Scope:** restructuring of the file “propuesta categorizada estratégicamente.txt” and an integration proposal.  
-**Result:** 70 references classified: the 69 original references plus llm-d, comprising 68 external components, tools or resources and two references to host projects. Not every item is an installable package.
+**Result:** 72 references classified: the 69 original references plus llm-d, Panel and Wings, comprising 70 external components, tools or resources and two references to host projects. Not every item is an installable package.
 
 > Status update: completed work in the [JFXAI4ARCH technical RAG pilot](https://github.com/robotics-intelligent-systems/jfxai4arch/blob/main/docs/rag/PILOT.md) has been removed from the pending actions below. Catalog entries remain as component references. Other integrations remain proposals unless implementation evidence is cited.
 
@@ -232,6 +232,15 @@ In each row, the function comes from the repository consulted; the destination a
 | [robotics-intelligent-systems/jfxai4bpm](https://github.com/robotics-intelligent-systems/jfxai4bpm) | Portfolio process-orchestration project | [jfxai4bpm](https://github.com/robotics-intelligent-systems/jfxai4bpm) | Host for enterprise contracts and adapters; do not count it as an external dependency. | H |
 | `robotics-intelligent-systems/jfxlcdp` → [sdk2035/jfxlcdp](https://github.com/sdk2035/jfxlcdp) | Reference in the attachment that should be corrected to sdk2035/jfxlcdp | [jfxlcdp](https://github.com/sdk2035/jfxlcdp) | Use the verified sdk2035/jfxlcdp path as the interface/low-code project; no same-named repository under robotics was confirmed. | H |
 
+### 5.13. Self-Hosted Infrastructure and Game-Server Operations
+
+| Component and provenance | Function | Proposed destination | Connection and adoption condition | Priority |
+| --- | --- | --- | --- | --- |
+| [sdk2035/panel](https://github.com/sdk2035/panel) · [upstream](https://github.com/pterodactyl/panel) | Web control plane for managing game servers and their nodes | Optional portfolio demo or development lab that needs isolated game-server workloads | Evaluate as a separately deployed operations platform; use its documented API for provisioning/status only where a concrete use case exists. Confirm the applicable license, supported versions, authentication, network exposure and container isolation before adoption. | P2 |
+| [sdk2035/wings](https://github.com/sdk2035/wings) · [upstream](https://github.com/pterodactyl/wings) | Node daemon that manages game-server containers for Pterodactyl Panel | Same optional lab environment as Panel; deploy alongside the control plane on managed nodes | Treat as Panel's paired node agent, not a standalone JFX runtime or general-purpose worker. Validate version compatibility, daemon privileges, node firewalling and lifecycle operations before connecting it to a lab. | P2 |
+
+Panel and Wings are proposed as optional infrastructure for a concrete game-server hosting or demonstration need. Their presence in this catalog does not establish integration with JFX services or justify adding them to the shared application stack.
+
 ## 6. Restructuring the Cross-Cutting Stack
 
 The attachment's final list mixes languages, runtimes, libraries, managed services and practices. Each should be recorded with its type and responsibility.
@@ -325,8 +334,8 @@ GitHub metadata shows diverse licenses and some cases without conclusive identif
 
 The inventory covered **47 JFX repositories** visible under `robotics-intelligent-systems` and eight JFX references under `sdk2035`. The attachment's 69 references were checked against GitHub; the JFXLCDP path under robotics was not confirmed and was corrected to the verified sdk2035 project.
 
-To classify destinations, the review read the READMEs of JFXAI4ARCH, JFXAI4NLP, JFXAI4DIA, JFXLMS4AIR, JFXAI4CV, JFXAI4BSS, JFXFMIS, JFXOSMS, JFXSCADA, JFXAI4RSS, JFXAI4BIO, JFXAI4BPM, JFXAI4CRM, JFXAI4OHS and JFXRTESS. It also reviewed READMEs for components whose names or original descriptions could be misleading, such as TiMBA, PixSim, TreeSim, Juliana.jl, hyperwood-bench, the two Backpack projects, ABAP MCP, Relevance AI and Julia4J.
+To classify destinations, the review read the READMEs of JFXAI4ARCH, JFXAI4NLP, JFXAI4DIA, JFXLMS4AIR, JFXAI4CV, JFXAI4BSS, JFXFMIS, JFXOSMS, JFXSCADA, JFXAI4RSS, JFXAI4BIO, JFXAI4BPM, JFXAI4CRM, JFXAI4OHS and JFXRTESS. It also reviewed READMEs for components whose names or original descriptions could be misleading, such as TiMBA, PixSim, TreeSim, Juliana.jl, hyperwood-bench, the two Backpack projects, ABAP MCP, Relevance AI and Julia4J. The October 14 update checked the sdk2035 Panel and Wings fork metadata and descriptions against their declared Pterodactyl upstreams; the catalog entry is an optional lab proposal, not an implemented integration.
 
 Each row links to the component source and, where a fork exists, its declared upstream. The recommendations for destinations, priorities, contracts and pilots are the proposed work in this document. No packages were installed, no models or simulations were run, and no GitHub repositories were modified during the original analysis.
 
-The October 6 update reviewed the llm-d fork README and declared upstream, the current sdk2035 profile, and JFXAI4ARCH's pilot implementation report. The catalog now includes llm-d; completed baseline tasks were removed from pending work while real-model, live-telemetry and domain validation remain open.
+The October 6 update reviewed the llm-d fork README and declared upstream, the current sdk2035 profile, and JFXAI4ARCH's pilot implementation report. The catalog now includes llm-d; completed baseline tasks were removed from pending work while real-model, live-telemetry and domain validation remain open. The October 14 update adds the Pterodactyl Panel and Wings forks under self-hosted infrastructure.
