@@ -6,7 +6,7 @@
 
 Lima, Peru · Open to remote opportunities across LATAM and the U.S., technical partnerships and collaborative R&D.
 
-[LinkedIn](https://www.linkedin.com/in/kjsanc) · [Email](mailto:kjsanc@gmail.com) · [Personal repositories](https://github.com/sdk2035?tab=repositories) · [Robotics & Intelligent Systems](https://github.com/robotics-intelligent-systems) · [Discord](https://discord.com/users/1560089627845468227)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kjsanc) [![Slack](https://img.shields.io/badge/Robotics_%26_Intelligent_Systems-4A154B?style=for-the-badge&logo=slack&logoColor=white)](https://roboticsintel-xny7516.slack.com/team/U0C98G39Q5V) [![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/1560089627845468227)
 
 ## About
 
@@ -309,7 +309,6 @@ I welcome conversations about:
 
 For a project-specific proposal, start with an issue in the relevant repository.
 For professional opportunities and partnerships, connect through
-[LinkedIn](https://www.linkedin.com/in/kjsanc) or
-[email](mailto:kjsanc@gmail.com), or [Discord](https://discord.com/users/1560089627845468227).
+[LinkedIn](https://www.linkedin.com/in/kjsanc), the [Robotics & Intelligent Systems Slack workspace](https://roboticsintel-xny7516.slack.com/team/U0C98G39Q5V), or [Discord](https://discord.com/users/1560089627845468227).
 
 *Build openly. Integrate intelligently. Validate with engineering.*
