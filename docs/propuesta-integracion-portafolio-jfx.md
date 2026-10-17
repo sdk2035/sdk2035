@@ -189,6 +189,8 @@ In each row, the function comes from the repository consulted; the destination a
 | [sdk2035/llm-engineer-toolkit](https://github.com/sdk2035/llm-engineer-toolkit) · [upstream](https://github.com/KalyanKS-NLP/llm-engineer-toolkit) | Curated, category-wise index of 120+ LLM libraries | [jfxai4nlp](https://github.com/robotics-intelligent-systems/jfxai4nlp), [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch) | Use as a discovery reference for LLM application development, RAG, agents and evaluation; review each linked project independently for fit, maintenance, license and compatibility. The catalog itself is not an installable dependency. | R |
 | [sdk2035/seekdb](https://github.com/sdk2035/seekdb) · [upstream](https://github.com/oceanbase/seekdb) | Search engine with vector and structured data | [jfxai4arch](https://github.com/robotics-intelligent-systems/jfxai4arch), [jfxai4nlp](https://github.com/robotics-intelligent-systems/jfxai4nlp) | Compare as a retrieval store; do not replace the transactional database without testing requirements. | P2 |
 
+The model-serving layer has its own role and adoption criteria. The [Model Serving and Open-Model Stack](model-serving-and-open-model-stack.md) supplement distinguishes model runtimes, retrieval, application orchestration and MCP tools, and records current upstream lifecycle caveats. Its examples are comparison material; they do not imply a selected or deployed server.
+
 ### 5.7. Model Evaluation and Decisions
 
 | Component and provenance | Function | Proposed destination | Connection and adoption condition | Priority |
@@ -293,6 +295,7 @@ The attachment's final list mixes languages, runtimes, libraries, managed servic
 | Go | Native service with an HTTP/gRPC contract if it adds value | `golang-jvm` remains unidentified and is not recommended: a concrete reference and compatibility tests are missing |
 | Julia and R | Separate scientific workers or services | Evaluate JNI/libjulia only if measurements justify its complexity; Juliana.jl addresses GPU portability, not JVM integration |
 | LLM orchestration | Choose a primary runtime; LlamaIndex for the proposed ingestion, LangChain or LangChain4j when their ecosystem fits the service | Langflow may provide authoring; AutoGPT and Relevance AI are alternatives with their own limits. Avoid deploying all of them without distinct responsibilities |
+| Inference serving | Start with one versioned model endpoint behind the application/provider adapter; pin model and server configuration | Compare runtime engines separately from deployment/orchestration layers. See [Model Serving and Open-Model Stack](model-serving-and-open-model-stack.md); no runtime is adopted here. |
 | Model providers | Interchangeable gateway for local models, OpenAI API or AWS Bedrock | Record provider, version, transmitted data and per-task cost; select through evaluation without assuming functional equivalence |
 | Persistence | PostgreSQL for transactional records; object storage for artifacts | DynamoDB is a managed alternative for a specific access pattern, not another mandatory dependency |
 | Retrieval | Select a text/vector index using a test query set | SeekDB is a comparison candidate; avoid introducing multiple databases merely because they appear in the list |
