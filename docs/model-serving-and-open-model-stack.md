@@ -74,3 +74,4 @@ The source files are removed from the working documentation tree after this repl
 - [Triton architecture — NVIDIA documentation](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/user_guide/architecture.html)
 - [Docker MCP Toolkit — Docker documentation](https://docs.docker.com/ai/mcp-catalog-and-toolkit/toolkit/)
 - [Run LLMs Locally with Docker: A Quickstart Guide to Model Runner](https://www.docker.com/blog/run-llms-locally/)
+- [Getting Started with Ollama: Running Language Models in Docker and Python](https://medium.com/@aziza.bibin/getting-started-with-ollama-running-language-models-in-docker-and-python-5dda8335d85f) — Community tutorial; it pulls `gemma3:4b` but its Python sample requests `gemma:2b`, so recheck the model tag, API, and Streamlit run command before adapting it.
