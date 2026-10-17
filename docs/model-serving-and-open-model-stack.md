@@ -73,3 +73,4 @@ The source files are removed from the working documentation tree after this repl
 - [Text Generation Inference documentation](https://huggingface.co/docs/text-generation-inference/index)
 - [Triton architecture — NVIDIA documentation](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/user_guide/architecture.html)
 - [Docker MCP Toolkit — Docker documentation](https://docs.docker.com/ai/mcp-catalog-and-toolkit/toolkit/)
+- [Run LLMs Locally with Docker: A Quickstart Guide to Model Runner](https://www.docker.com/blog/run-llms-locally/)
